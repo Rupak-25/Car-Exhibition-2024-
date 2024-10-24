@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior:smooth;
+}
+
+.loader {
+  font-size: 90px;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color:white;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap:40px;
+}
+.loader h3:nth-child(3){
+    margin-top: 250px;
+    font-size:35px;
+}
+.page1 {
+  height: 95vh;
+  width: 100%;
+  /* background-color: #e90606; */
+}
+#cursor {
+  height: 7.5vw;
+  width: 7.5vw;
+  border-radius: 50%;
+  /* background-color: #FF5F38; */
+  background-color: rgb(22, 20, 20);
+  opacity: 0.6;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transform: translate(-50%, -50%);
+  font-size: 1.2vw;
+  font-weight: 700;
+  color: white;
+}
+.page1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.page1-docs {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.321);
+  /* background-color:rgba(0,0,0) ; */
+  position: relative;
+  z-index: 10;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw 3vw;
+  display: inline-block;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw 3vw;
+  /* background-color: red; */
+  width: 100%;
+}
+nav h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10vw;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  line-height: 27vw;
+}
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fdfdf9;
+}
+.elem1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+  padding: 3vw 3vw;
+  /* background-color: red; */
+  width: 100%;
+  margin-top: 50px;
+}
+.seperation {
+  margin: 1.5vw;
+  margin-left: 80px;
+  height: 1px;
+  width: 90%;
+  background-color: #000;
+}
+.elem2 p {
+  font-size: 70px;
+  align-items: center;
+  padding: 3vw 3vw;
+  /* background-color: red; */
+  width: 100%;
+  margin-top: 25px;
+  line-height: 1.1em;
+  letter-spacing: -1px;
+}
+.page3 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.page3-top {
+  /* background-color: red; */
+  text-align: center;
+  line-height: 2.5rem;
+  margin-top: 150px;
+}
+.page3-top h4 {
+  margin-bottom: 5vw;
+  font-size: 50px;
+  font-weight: 100;
+}
+.page3-top h2 {
+  margin-bottom: 1vw;
+  font-size: 50px;
+  font-weight: 700;
+}
+.page3-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75vh;
+  width: 100%;
+  margin-top: 8vw;
+  /* background-color: red; */
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.page3-elements .box {
+  height: 100%;
+  width: 32.5%;
+  background-color: blue;
+  position: relative;
+}
+.page3-elements .box video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.page3-elements .box img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.7s;
+}
+.page3-elements .box:hover img {
+  opacity: 0;
+}
+.page4 {
+  margin-top: 220px;
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page4 video {
+  height: 100%;
+}
+.page4 svg {
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 1;
+  transition: 0.7s;
+}
+.page4 svg:hover {
+  opacity: 0;
+}
+.page5 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fdfdf9;
+}
+.elem1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+  padding: 3vw 3vw;
+  /* background-color: red; */
+  width: 100%;
+  margin-top: 50px;
+}
+.elem1 h3 {
+  margin-left: 20px;
+}
+.seperation {
+  margin: 1vw;
+  margin-left: 80px;
+  height: 1px;
+  width: 90%;
+  background-color: #000;
+}
+.elem2 p {
+  font-size: 80px;
+  align-items: center;
+  padding: 3vw 3vw;
+  /* background-color: red; */
+  width: 100%;
+  margin-top: 25px;
+  line-height: 1.1em;
+  letter-spacing: -1px;
+}
+.page6 {
+  height: 100vh;
+  width: 100%;
+  padding: 1vw;
+  margin-top: 100px;
+  position: relative;
+}
+.page6-top p {
+  font-size: 8vw;
+  margin-left: 50px;
+}
+.swiper {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.extra{
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 7px;
+  height: 12vw;
+}
+.page7{
+  height: 75vh;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  gap: 30px;
+  margin-top: 700px;
+}
+.page7 .seperation{
+  background-color: white;
+}
+.elem456{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vw 5vw;
+  /* background-color: red; */
+  width: 100%;
+}
+.elem456 p{
+  font-size: 50px;
+  letter-spacing: -1px;
+}
+.elem456 ul{
+  list-style: none;
+}
+.elem456 ul li{
+  margin-top: 20px;
+}
+.elem789{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw 3vw;
+  /* background-color: red; */
+  width: 100%;
+  margin-top: 35px;
+}
+.elem789 a{
+  text-decoration: none;
+  color: white;
+  display:flex;
+}
+.elem789 ul{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
